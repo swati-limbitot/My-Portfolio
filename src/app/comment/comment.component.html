@@ -1,0 +1,19 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+<p>
+    <label for="name" style="color: white;">Name</label><br>
+    <input type="text" id="name" name="name" formControlName="name"><br><br>
+</p>
+<p>
+    <label for="email" style="color: white;">Email</label><br>
+    <input type="text" id="email" name="email" formControlName="email"><br><br>
+   </p>
+   <p>
+  
+    <label for="comment" style="color: white;">Comment</label><br>
+    <textarea name="comment" id="comment" style="height:200px" formControlName="comment" 
+    placeholder="Comment here..." cols="30" rows="10"></textarea><br><br>
+  </p>
+  <p>
+    <button>Post</button>
+    </p>
+  </form>

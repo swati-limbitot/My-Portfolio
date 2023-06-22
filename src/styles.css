@@ -1,0 +1,300 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/images/my pic.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 200%;
+  
+}
+
+
+
+nav .logo{
+    width: 70px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+nav{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 5px 30px;
+    align-items: center;
+    justify-content: space-between;
+    background: gray;
+
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: black;
+    display: block;
+    transition: 0.2s linear;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+.details{
+    margin-left: 70%;
+    margin-top: 13%;
+    position: relative;
+    color: #fff;
+}
+
+.details h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+span{
+    color: orange;
+}
+
+.details{
+    color: white;
+    line-height: 22px;
+
+}
+
+.details a{
+    background: grey;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    color: #fff;
+    text-align: justify;
+    position: relative;
+    
+}
+
+
+
+
+#pic{
+    display: flex;
+}
+
+#pic img{ 
+    width: 575px;
+    height: 400px;
+    padding-left: 40px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+    color: #fff;
+}
+
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#portfolio{
+    
+    color: white;
+    padding-top: 40px;
+    
+}
+
+#portfolio-box{
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px;
+    text-align: center;
+    display: inline-flexbox;
+}
+
+.one{
+    width: 200px;
+    display: inline-block;
+   
+}
+
+    
+    
+
+
+#contact{
+    position: relative;
+    color: white;
+    padding-top: 40px;
+    
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    
+}
+/* contact box */
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: black;
+    padding: 10px;
+    text-align: center;
+  }
+
+  form{
+
+    padding: 50px;
+    font-size: larger;
+    color: white;
+
+}
+
+button{
+    background-color: #fabd02;
+    width:80px;
+    height: 40px;
+}
+
+
+
+table {
+	font-family: sans-serif;
+}
+table th, table td {
+	padding: .25em .5em;
+	text-align: left;
+}
+table th:nth-child(2), table td:nth-child(2) {
+	text-align: right;
+}
+table td {
+	background-color: #eee;
+}
+table th {
+	background-color: rgb(75, 163, 218);
+	color: #342828;
+}
+.zigzag {
+	border-collapse: separate;
+	border-spacing: .25em 1em;
+}
+.zigzag tbody tr:nth-child(odd) {
+	transform: rotate(2deg);
+}
+.zigzag thead tr, .zigzag tbody tr:nth-child(even) {
+	transform: rotate(-2deg);
+}
+
+.button-18 :disabled{
+    cursor: not-allowed;
+    background: rgb(43, 39, 39);
+    color: grey;
+
+}
+
+.textbox {
+
+
+font-size: 14px; 
+border-radius: 6px;
+line-height: 1.5;
+padding: 5px 10px;
+transition: box-shadow 100ms ease-in;
+border: 2px solid grey;
+color: rgb(14, 14, 16);
+background: #dee1e2;
+display: block; 
+height: 36px;
+}
+:hover{
+    border-color: rgb(222, 105, 105);
+
+}
+:focus{
+
+border-color: #9147ff;
+ background: #fff;
+
+}
+
+.taskForm{
+    border: 1px solid goldenrod;
+    margin-bottom: 15px;
+}
